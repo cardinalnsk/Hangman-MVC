@@ -1,5 +1,6 @@
-package view.view_dialog;
+package view.console_dialog_view;
 
+import view.AbstractDialogView;
 import view.Printer;
 import view.Reader;
 
@@ -7,6 +8,7 @@ public class CharDialogView extends AbstractDialogView<Character> {
 
 
   public CharDialogView(Printer printer, Reader reader, String title, String errorMessage) {
+
     super(printer,
         reader,
         title,

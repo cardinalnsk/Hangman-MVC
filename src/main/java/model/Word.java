@@ -1,8 +1,5 @@
 package model;
 
-import lombok.Getter;
-
-@Getter
 public class Word {
 
   private final Letter[] letters;
@@ -54,5 +51,12 @@ public class Word {
       }
     }
     return true;
+  }
+
+  public Word openWord() {
+    for (Letter letter : letters) {
+      letter.open();
+    }
+    return this;
   }
 }

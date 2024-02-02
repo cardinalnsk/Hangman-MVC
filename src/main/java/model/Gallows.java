@@ -1,11 +1,8 @@
 package model;
 
-import lombok.Getter;
-
 public class Gallows {
 
-  private static final int MAX_STEP = 6;
-  @Getter
+  private static final int MAX_STEP = 8;
   private int step;
 
   public Gallows(int step) {
@@ -16,7 +13,7 @@ public class Gallows {
     this(0);
   }
 
-  public void incStep(){
+  public void incStep() {
     step++;
   }
 
@@ -24,4 +21,7 @@ public class Gallows {
     return step == MAX_STEP;
   }
 
+  public int getStep() {
+    return step;
+  }
 }

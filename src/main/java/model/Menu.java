@@ -2,12 +2,11 @@ package model;
 
 import java.util.ArrayList;
 import java.util.List;
-import lombok.Getter;
 
 public class Menu {
 
-  @Getter
   private final String title;
+
   private final List<String> items;
 
   public Menu(String title) {
@@ -25,6 +24,10 @@ public class Menu {
 
   public int size() {
     return items.size();
+  }
+
+  public String getTitle() {
+    return title;
   }
 
 }

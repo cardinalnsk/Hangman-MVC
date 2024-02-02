@@ -1,5 +1,6 @@
-package view.view_dialog;
+package view.console_dialog_view;
 
+import view.AbstractDialogView;
 import view.Printer;
 import view.Reader;
 

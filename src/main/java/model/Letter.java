@@ -1,10 +1,9 @@
 package model;
 
-import lombok.Getter;
-
 public class Letter {
-  @Getter
+
   private final char symbol;
+
   private boolean isOpen;
 
   public Letter(char symbol) {
@@ -18,6 +17,10 @@ public class Letter {
 
   public void open() {
     this.isOpen = true;
+  }
+
+  public char getSymbol() {
+    return symbol;
   }
 
 }

@@ -1,9 +1,8 @@
-package view.view_dialog;
+package view;
 
 import java.util.function.Function;
 import java.util.function.Predicate;
-import view.Printer;
-import view.Reader;
+import view.console_dialog_view.DialogView;
 
 public abstract class AbstractDialogView<T> implements DialogView<T> {
 
@@ -15,8 +14,13 @@ public abstract class AbstractDialogView<T> implements DialogView<T> {
   protected final Function<String, T> map;
 
 
-  public AbstractDialogView(Printer printer, Reader reader, String title, String errorMessage,
-      Predicate<String> predicate, Function<String, T> map) {
+  public AbstractDialogView(
+      Printer printer,
+      Reader reader,
+      String title,
+      String errorMessage,
+      Predicate<String> predicate,
+      Function<String, T> map) {
     this.printer = printer;
     this.reader = reader;
     this.title = title;

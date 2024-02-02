@@ -14,11 +14,11 @@ public class ConsoleGallowsView extends AbstractView<Gallows> {
   @Override
   public void show(Gallows gallows) {
     String picture = GALLOWS[GALLOWS.length - gallows.getStep() - 1];
-    printer.print(picture);
+    printer.print("\033[31;1m" + picture);
   }
 
 
-  public static final String[] GALLOWS = {
+  private static final String[] GALLOWS = {
 
       """
                   +---+
@@ -102,6 +102,21 @@ public class ConsoleGallowsView extends AbstractView<Gallows> {
                       |
                 =========
                 """
+      ,
 
+      """
+                  
+                     
+                      
+                      
+                      
+                      
+                      
+                =========
+                """
+      ,
+
+      """
+                """
   };
 }
